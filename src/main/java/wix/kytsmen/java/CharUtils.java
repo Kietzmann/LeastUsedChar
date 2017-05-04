@@ -13,10 +13,10 @@ public class CharUtils {
     // we can speed up it if we now that there will be only letters but in task was specified 'symbols'
     public static char leastUsedChar(String string) {
         if (string == null) {
-            throw new IllegalArgumentException("String is null");
+            throw new IllegalArgumentException("String is null!");
         }
         if (string.isEmpty()) {
-            throw new IllegalArgumentException("String is empty");
+            throw new IllegalArgumentException("String is empty!");
         }
         char ans = 0;
         int cnt = Integer.MAX_VALUE;
