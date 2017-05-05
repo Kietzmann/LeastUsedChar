@@ -20,7 +20,7 @@ public class CharUtils {
         }
         char ans = 0;
         int cnt = Integer.MAX_VALUE;
-        for (char ch = MIN_VALUE; ch <= MAX_VALUE; ++ch) {
+        for (int ch = MIN_VALUE; ch <= MAX_VALUE; ++ch) {
             int currCnt = 0;
             for (int i = 0; i < string.length(); ++i) {
                 if (string.charAt(i) == ch) {
@@ -29,7 +29,7 @@ public class CharUtils {
             }
 
             if (currCnt < cnt && currCnt > 0) { //if the last occurring should be returned, than currCnt <= cnt
-                ans = ch;
+                ans = (char)ch;
                 cnt = currCnt;
             }
         }
